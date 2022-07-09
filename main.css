@@ -23,6 +23,17 @@ a {
   color: white;
 }
 
+/* STATE STICKER */
+.state_sticker {
+  display: inline-block;
+  background-color: #00704a;
+  color: white;
+  font-size: 10px;
+  font-weight: 800;
+  border-radius: 10px;
+  padding: 2px 8px;
+}
+
 /* BUTTON */
 .btn {
   display: inline;
@@ -124,7 +135,7 @@ header {
   position: fixed;
   width: 100%;
   top: 0;
-  z-index: 1;
+  z-index: 2;
 }
 
 header > .inner {
@@ -260,7 +271,7 @@ header .inner .search span:hover {
 
 .main_menu .item .item__contents .item__contents__menu .inner > li {
   width: 200px;
-  padding: 0 20px 0 0;
+  padding: 0 20px 20px 0;
 }
 
 .main_menu .item .item__contents .item__contents__menu .inner > li > a {
@@ -296,8 +307,15 @@ header .inner .search span:hover {
 
 /* Addtional */
 .main_menu .item .item__contents .item__contents__addtional {
+  position: relative;
   background-image: url(./star-bucks/images/main_menu_pattern.jpg);
-  padding: 20px 0;
+  padding: 20px 0 30px 0;
+}
+
+.main_menu .item .item__contents .item__contents__addtional .state_sticker {
+  position: absolute;
+  top: -1px;
+  left: 100px;
 }
 
 .main_menu .item .item__contents .inner > a {
@@ -324,6 +342,7 @@ header .badges {
   position: absolute;
   top: 150px;
   right: 20px;
+  z-index: 2;
 }
 
 /* Visual  */
@@ -382,8 +401,6 @@ header .badges {
   position: absolute;
   width: 590px;
   top: 220px;
-  /* top: 200px */
-  /* left: 30px */
   opacity: 0;
   transition: 0.4s;
 }
@@ -687,7 +704,7 @@ header .badges {
   background-repeat: no-repeat;
   width: 200px;
   height: 300px;
-  z-index: 2;
+  z-index: 1;
 }
 
 .indonesia .inner .indonesia_img {
@@ -920,7 +937,7 @@ footer {
   height: 270px;
   color: white;
   padding-top: 50px;
-  font-size: 1rem;
+  font-size: 15px;
 }
 
 footer .inner .footer_menus {
